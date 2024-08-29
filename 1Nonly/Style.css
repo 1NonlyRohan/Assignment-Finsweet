@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header .contact-btn {
+    background-color: #ffc691;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(Hero.avif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contact-form,
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffbc71a3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+strong{
+    color: #000;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    color: #636363;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #616161;
+}
+
+.bxl-facebook-circle:before {
+    content: "\e930";
+    font-size: 2rem;
+}
+
+.bxl-twitter:before {
+    content: "\e982";
+    font-size: 2rem;
+}
+
+.bxl-linkedin-square:before {
+    content: "\e94e";
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #272737;
+    color: #f2f2f2;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container .left,
+.footer-container .right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.left h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #f2c891;
+    font-weight: 700;
+}
+
+.left p {
+    margin: 5px 0;
+    color: #c5c5c5;
+}
+
+.quicklinks {
+    margin: 20px 50px 0 0;
+}
+
+.connect {
+    margin-right: 50px;
+    padding: 20px 0;
+}
+
+.quicklinks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quicklinks ul a {
+    text-decoration: none;
+}
+
+.quicklinks ul li {
+    margin-bottom: 10px;
+    color: #c5c5c5;
+}
+
+.connect a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.right h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    width: 70%;
+    font-size: 16px;
+    outline: 0px;
+    background: transparent;
+    border: 1px solid #949494;
+    color: #fff;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background-color: #f2c891;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #1c1c24;
+}
+
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        text-align: center;
+    }
+
+    .subscribe {
+        flex-direction: column;
+    }
+
+    .subscribe input[type="email"],
+    .subscribe button {
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}
